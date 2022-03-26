@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="App">
+    <my-header></my-header>
+    <router-view></router-view>
+    <!-- <music-main></music-main> -->
+    <my-footer></my-footer>
+    <!-- <music-player></music-player> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyFooter from "./components/MyFooter.vue";
+import MyHeader from "./components/MyHeader.vue";
+// import MusicPlayer from "./views/aplayer/MusicPlayer.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  components: { MyHeader, MyFooter },
+  name: "App",
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#App {
+  background: rgb(136, 120, 120);
+}
+#nprogress .bar {
+  background: rgb(17, 13, 207) !important;
+  height: 20px;
 }
 </style>
