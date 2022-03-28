@@ -9,7 +9,7 @@ const requests = axios.create({
   //配置对象
   baseURL: "https://netease-cloud-music-api-1-rgak5d383-zlz9.vercel.app",
   // baseURL: "http://localhost:3000",
-  timeout: 5000,
+  timeout: 30000,
   withCredentials: true,
 });
 
