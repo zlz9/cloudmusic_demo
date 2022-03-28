@@ -40,10 +40,10 @@ export default {
       },
     };
   },
-  beforeMount() {
+  beforeMount() {},
+  mounted() {
     this.getMusicInfo();
   },
-  mounted() {},
   methods: {
     getMusicInfo() {
       // 获取歌曲详情
