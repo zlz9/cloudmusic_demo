@@ -25,6 +25,6 @@ export default {
 }
 #nprogress .bar {
   background: rgb(17, 13, 207) !important;
-  height: 20px;
+  height: 3px;
 }
 </style>
