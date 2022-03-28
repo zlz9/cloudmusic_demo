@@ -41,7 +41,7 @@ export default {
     };
   },
   beforeMount() {},
-  mounted() {
+  created() {
     this.getMusicInfo();
   },
   methods: {
