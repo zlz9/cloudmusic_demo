@@ -218,3 +218,10 @@ export const reqSearch = (params) =>
     method: "get",
     params,
   });
+// 获取歌曲评论 url:/comment/music 参数:id,limit,offset,before
+export const reqMusicComments = (params) =>
+  requests({
+    url: "/comment/music",
+    method: "get",
+    params,
+  });

@@ -7,7 +7,7 @@ import nprogress from "nprogress";
 import axios from "axios";
 const requests = axios.create({
   //配置对象
-  baseURL: "https://netease-cloud-music-api-1-5800rfz37-zlz9.vercel.app/",
+  baseURL: "https://netease-cloud-music-api-o67ppm8qp-zlz9.vercel.app/",
   // baseURL: "http://localhost:3000",
   timeout: 30000,
   withCredentials: true,

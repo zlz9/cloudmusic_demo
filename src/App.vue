@@ -16,6 +16,7 @@ import MyHeader from "./components/MyHeader.vue";
 export default {
   components: { MyHeader, MyFooter },
   name: "App",
+  mounted() {},
 };
 </script>
 

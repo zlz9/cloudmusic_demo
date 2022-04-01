@@ -20,6 +20,7 @@ import djradio from "./djradio";
 import artists from "./artists";
 import album from "./album";
 import search from "./search";
+import comments from "./comments";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -49,5 +50,6 @@ export default new Vuex.Store({
     // 新碟上架
     album,
     search,
+    comments,
   },
 });

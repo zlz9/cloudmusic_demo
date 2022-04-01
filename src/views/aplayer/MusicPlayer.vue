@@ -22,11 +22,14 @@
       :lrcType="1"
       style="width: 60%; height: 100px; margin: 0 auto"
     />
+    <music-comment :id="$route.query.id" />
   </div>
 </template>
 <script>
+import MusicComment from "@/components/comment/MusicComment.vue";
 import { mapState, mapGetters } from "vuex";
 export default {
+  components: { MusicComment },
   name: "MusicPlayer",
   data() {
     return {
@@ -55,7 +58,10 @@ export default {
       this.$store.dispatch("getLyric", params);
       setTimeout(() => {
         this.audio.cover = this.getSong[0].al.picUrl || [];
-        this.audio.url = this.getUrl2.url;
+        // 原先的url失效
+        // this.audio.url = this.getUrl2.url;
+        // 获取新的url
+        this.audio.url = `https://music.163.com/song/media/outer/url?id=${ids}.mp3`;
         this.audio.lrc = this.lrc.lyric;
       }, 800);
     },

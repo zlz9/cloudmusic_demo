@@ -5,8 +5,8 @@
       style="background: #242424; width: 100%; height: 79px; position: absolute"
     ></div>
     <div class="logo">
-      <img src="../assets/logo.png" alt="" />
-      <div class="logo_text"><a ref="#" class="logo_text">网易云音乐</a></div>
+      <img src="../assets/aplayer.gif" alt="" />
+      <div class="logo_text"><a ref="#" class="logo_text">YTmusic</a></div>
       <div class="nav">
         <ul class="nav_text">
           <li><a href="#">发现音乐</a></li>
@@ -71,6 +71,9 @@ export default {
       });
       this.keyWord = "";
     },
+  },
+  mounted() {
+    console.log(this, "myheader");
   },
 };
 </script>
