@@ -2,7 +2,7 @@
   <div id="music_comment">
     <ul>
       <li v-for="(comment, index) in musicComments.comments" :key="index">
-        <img :src="comment.user.avatarUrl" alt="" />
+        <img v-lazy="comment.user.avatarUrl" alt="" />
         <div class="nickname">{{ comment.user.nickname }}</div>
         <div class="comment">{{ comment.content }}</div>
         <div class="timeStr">{{ comment.timeStr }}</div>
@@ -45,6 +45,7 @@ export default {
 
 <style lang="less" scoped>
 #music_comment {
+  cursor: pointer;
   margin: 0 auto;
   position: relative;
   width: 1100px;
@@ -53,7 +54,7 @@ export default {
   margin-bottom: 20px;
   ul li {
     position: relative;
-    width: 700px;
+    width: 900px;
     height: 80px;
     list-style: none;
     margin-bottom: 10px;
@@ -66,7 +67,7 @@ export default {
     .nickname {
       position: absolute;
       top: 2px;
-      width: 500px;
+      width: 700px;
       height: auto;
       left: 90px;
       font-style: italic;
@@ -75,7 +76,7 @@ export default {
     .comment {
       position: absolute;
       top: 30px;
-      width: 500px;
+      width: 700px;
       height: auto;
       left: 90px;
       display: -webkit-box;

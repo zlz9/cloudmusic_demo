@@ -37,7 +37,7 @@ const actions = {
     let result = await reqAlbum();
     if (result.status == 200) {
       //对后台数据进行截取
-      commit("GETALBUM", result.data.monthData.slice(0, 4));
+      commit("GETALBUM", result.data.weekData.slice(0, 4));
     }
   },
   // 获取每日推荐歌单
